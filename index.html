@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TR Chat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="loginScreen" class="login-screen">
+
+    <div class="login-card">
+
+        <h1>TR Chat</h1>
+
+        <p class="subtitle">
+            Güvenli Mesajlaşma
+        </p>
+
+        <div class="tabs">
+
+            <button id="loginTab" class="tab active">
+                Giriş Yap
+            </button>
+
+            <button id="registerTab" class="tab">
+                Kayıt Ol
+            </button>
+
+        </div>
+
+        <!-- GİRİŞ -->
+
+        <div id="loginBox">
+
+            <input
+                id="loginEmail"
+                type="email"
+                placeholder="E-posta">
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Şifre">
+
+            <button id="loginBtn">
+                Giriş Yap
+            </button>
+
+            <button
+                id="forgotBtn"
+                class="linkButton">
+
+                Şifremi Unuttum
+
+            </button>
+
+        </div>
+
+        <!-- KAYIT -->
+
+        <div
+            id="registerBox"
+            style="display:none;">
+
+            <input
+                id="registerEmail"
+                type="email"
+                placeholder="E-posta">
+
+            <input
+                id="registerPassword"
+                type="password"
+                placeholder="Şifre">
+
+            <input
+                id="registerPassword2"
+                type="password"
+                placeholder="Şifre Tekrar">
+
+            <button id="registerBtn">
+                Kayıt Ol
+            </button>
+
+            <p class="info">
+
+                Kayıt olduktan sonra
+                e-postana doğrulama
+                bağlantısı gönderilecektir.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PROFİL OLUŞTUR -->
+
+<div
+id="profileScreen"
+style="display:none;">
+
+<div class="profile-card">
+
+<h2>Profilini Oluştur</h2>
+
+<input
+id="username"
+type="text"
+placeholder="Kullanıcı Adı">
+
+<input
+id="avatar"
+type="file"
+accept="image/*">
+
+<button id="saveProfile">
+
+Devam Et
+
+</button>
+
+</div>
+
+</div>
+
+<!-- CHAT -->
+
+<div
+id="chatScreen"
+style="display:none;">
+
+<div class="sidebar">
+
+<div class="logo">
+
+TR Chat
+
+</div>
+
+<input
+id="searchUser"
+placeholder="Kullanıcı Ara">
+
+<button id="newChat">
+
+Yeni Sohbet
+
+</button>
+
+<button id="newGroup">
+
+Yeni Grup
+
+</button>
+
+</div>
+
+<div class="chatArea">
+
+<div id="messages">
+
+</div>
+
+<div class="messageBar">
+
+<input
+id="messageInput"
+placeholder="Mesaj yaz...">
+
+<input
+type="file"
+id="imageInput"
+accept="image/*"
+hidden>
+
+<button id="imageBtn">
+
+📎
+
+</button>
+
+<button id="sendBtn">
+
+Gönder
+
+</button>
+
+</div>
+
+</div>
+
+<div class="rightBar">
+
+<h3>
+
+Çevrimiçi
+
+</h3>
+
+<div id="onlineUsers">
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
